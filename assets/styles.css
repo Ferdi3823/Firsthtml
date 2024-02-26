@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/images/fond2jpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Titre-Principal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*déco ballons*/
+.ballon {
+    position: absolute;
+    top: 50%;
+    width: 50px; 
+    height: auto;
+    animation: rotation 4s linear infinite; /* Animation de rotation */
+}
+
+.ballon-gauche {
+    left: 0;
+    transform: translateY(-50%) rotate(0deg); 
+}
+
+.ballon-droite {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg); 
+}
+
+@keyframes rotation {
+    0% {
+        transform: translateY(-50%) rotate(0deg); 
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg); 
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size-adjust: 0.5;
+}
+
+h3 {
+    text-align: center;
+}
+h5{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    border: 2px solid #007bff; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+.poste_gardien{
+    display: flex;
+    justify-content: center;
+}
+
+.poste_terrain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nom{
+    color: burlywood;
+}
+.joueur {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 250px;
+    height: 400px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    border: 20px groove #303498;
+}
+/* cartes joueurs */
+.joueur.joueur0 {
+    background-image: url('../assets/images/Gagamaru.jpg');
+    background-size: cover; 
+    background-position: center; 
+    
+}
+
+.joueur.joueur1 {
+    background-image: url('../assets/images/Aryu.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.joueur.joueur2 {
+    background-image: url('../assets/images/AIku.jpg');
+    background-size: cover; 
+    background-position: center;
+    
+}
+
+.joueur.joueur3 {
+    background-image: url('../assets/images/Ikkobest.png');
+    background-size: cover;
+    background-position: center; 
+   
+}
+
+.joueur.joueur3 {
+    background-image: url('../assets/images/Ikkobest.png');
+    background-size: cover; 
+    background-position: center; 
+
+}
+
+.joueur.joueur4 {
+    background-image: url('../assets/images/Raichi.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.joueur.joueur5 {
+    background-image: url('../assets/images/Reo.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.joueur.joueur6 {
+    background-image: url('../assets/images/Ness.webp');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.joueur.joueur7 {
+    background-image: url('../assets/images/Barou.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.joueur.joueur8 {
+    background-image: url('../assets/images/nagi.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.joueur.joueur9 {
+    background-image: url('../assets/images/Kaiser.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.survol {
+    display: none;
+   
+}
+
+
+.survol {
+    position: absolute;
+    display: none; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: 20px groove #303498;
+}
+
+/* l'image au survol */
+.joueur:hover .survol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*image à l'intérieur de .survol */
+.joueur:hover .survol img {
+    width: 100%; 
+    height: auto;
+    overflow: hidden;
+}
+
+.tableau {
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+.tableau th, .tableau td {
+    border: 2px solid #007bff;
+    padding: 8px; 
+    text-align: left; 
+}
+
+.poste {
+    font-weight: bold; 
+}
